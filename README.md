@@ -5,9 +5,12 @@ This Playwright automation test framework uses TypeScript to automate [Darktrace
 ## Aim/Goals
 - Develop Playwright automation framework using TypeScript.
 - Demonstrate use of POM (Page Object Model) to show readable, maintainable and scalable code.
+- Initialise setup tests to run first, confirming environment is ready before running remaining automation tests.
 - Create UI tests to verify core webpages are present and functional.
+- Create API tests to verify status (alternative smoke testing).
 - Integrate CI/CD workflow using GitHub Actions.
 - Development timeboxed to 1-2 days.
+- Raise areas of website improvements.
 
 
 ## Setup Instructions
@@ -51,6 +54,35 @@ Steps on how to install dependencies and execute the tests.
     ```bash
     npx playwright test landing.spec.ts
     ```
+
+
+## Areas of Interest / Suggested Improvements
+
+### data-testid
+
+- Adding the 'data-testid' HTML attribute to uniquely identified elements in the UI would contribute towards the reliability, maintainance, stability and scalability of the automated tests.
+
+![MissingTestID](/README_images/Missing_TestId.jpg)
+
+
+### Missing assets / 404 Not Found error
+
+- On the landing page as well some others (i.e. ) the console is throwing errors. These either need to be added or the references removed if no longer needed.
+
+![404NotFound](/README_images/404NotFound.jpg)
+
+
+### 403 Forbidden error
+
+- There is a 403 Forbidden error shoing on the 'Get a demo' page (https://www.darktrace.com/demo)
+
+![403Forbidden](/README_images/403Forbidden.jpg)
+
+
+### Missing alt-text from images
+- Many alt-text descriptions to images are missing such as on the Darktrace webpage. Adding this would help towards accessibility compliance.
+
+![MissingAltText](README_images/Missing_alt_text.jpg)
 
 
 ## Testing Framework Developed By
