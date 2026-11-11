@@ -4,6 +4,7 @@ import { DarktracePlatformPage } from "@pages/platform/darktracePlatform.page"
 import { RansomwarePage } from "@pages/solutions/ransomware.page"
 import { OurAIPage } from "@pages/whyDarktrace/ourAI.page"
 import { OverviewPage } from "@pages/partners/overview.page"
+import { DarktraceBlogPage } from "@pages/resources/darktraceBlog.page"
 import { Error404Page } from "@pages/landing/error404.page"
 import { test as baseTest } from "@playwright/test"
 
@@ -14,6 +15,7 @@ type MyPages = {
     ransomwarePage: RansomwarePage
     ourAIPage: OurAIPage
     overviewPage: OverviewPage
+    darktraceBlogPage: DarktraceBlogPage
     error404Page: Error404Page
 }
 
@@ -35,6 +37,9 @@ export const test = baseTest.extend<MyPages>({
     },
     overviewPage: async ({ page }, use) => {
     await use(new OverviewPage(page))
+    },
+    darktraceBlogPage: async ({ page }, use) => {
+    await use(new DarktraceBlogPage(page))
     },
     error404Page: async ({ page }, use) => {
     await use(new Error404Page(page))
