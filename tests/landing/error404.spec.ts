@@ -5,7 +5,7 @@ test.describe("Visit Error 404 page for Darktrace", ()=>{
     test('Validate Error 404 page present', async ({ error404Page, page }) => {
         await error404Page.goto()
         await expect(page).toHaveTitle('Page Not Found | Darktrace')
-        await expect (error404Page.main).toContainText("Error 404")
+        await expect(error404Page.main).toContainText("Error 404")
         await expect(error404Page.homepageLink).toBeVisible()
         await expect(error404Page.resourcesLink).toBeVisible()
     })
