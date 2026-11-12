@@ -8,6 +8,7 @@ This Playwright automation test framework uses TypeScript to automate [Darktrace
 - Initialise setup tests to run first, confirming environment is ready before running remaining automation tests.
 - Create UI tests to verify core webpages are present and functional.
 - Create API tests to verify status (alternative smoke testing).
+- Perform tests against a variety of web browsers and mobile viewports.
 - Integrate CI/CD workflow using GitHub Actions.
 - Development timeboxed to 1-2 days.
 - Raise areas of website improvements.
