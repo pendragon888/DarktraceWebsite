@@ -68,14 +68,14 @@ Steps on how to install dependencies and execute the tests.
 
 ### Missing assets / 404 Not Found error
 
-- On the landing page as well some others (i.e. ) the console is throwing errors. These either need to be added or the references removed if no longer needed.
+- On the landing page as well some others (i.e. https://www.darktrace.com/demo) the console is throwing errors. These either need to be added or the references removed if no longer needed.
 
 ![404NotFound](/README_images/404NotFound.jpg)
 
 
 ### 403 Forbidden error
 
-- There is a 403 Forbidden error shoing on the 'Get a demo' page (https://www.darktrace.com/demo)
+- There is a 403 Forbidden error showing on the 'Get a demo' page (https://www.darktrace.com/demo)
 
 ![403Forbidden](/README_images/403Forbidden.jpg)
 
